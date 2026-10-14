@@ -18,6 +18,6 @@ jobs:
 
       # Step 2: Ensure core files exist before running deep tests
       - name: Verify critical file existence
-        run: echo "this is my first Job"
+        run: test -f index.html
 
     
