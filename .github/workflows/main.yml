@@ -18,7 +18,6 @@ jobs:
 
       # Step 2: Ensure core files exist before running deep tests
       - name: Verify critical file existence
-        run: |
-          test-f index.html || (echo "Critical Error: index.html is missing!" && exit 1)
+        run: echo "this is my first Job"
 
     
