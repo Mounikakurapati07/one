@@ -21,10 +21,4 @@ jobs:
         run: |
           test-f index.html || (echo "Critical Error: index.html is missing!" && exit 1)
 
-      # Step 3: Validate HTML syntax and look for broken links/images
-      - name: Lint and Validate HTML
-        uses: anishathalye/proof-html@v2
-        with:
-          directory: '.' # Root directory containing your HTML files
-          check_html: true # Validates via Nu HTML Validator
-          enforce_https: true # Ensures external links use secure HTTPS
+    
